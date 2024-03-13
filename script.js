@@ -47,3 +47,22 @@ arrayHasElement(array2, valueToCheck2);
 
 // alta metoda
 arrayHasElement([`ala`, `bala`, `portocala`], `ala`);
+
+// functie cu parametri si return
+
+function removeEvenNumbers(arrayToModify) {
+	const newArray = [];
+
+	for (const num of arrayToModify) {
+		if (num % 2 > 0) {
+			newArray.push(num);
+		}
+	}
+	return newArray;
+}
+
+const array1Modified = removeEvenNumbers(array1);
+console.log(`Modified array1 is: ${array1Modified}`);
+
+const array2Modified = removeEvenNumbers(array2);
+console.log(`Modified array2 is: ${array2Modified}`);
